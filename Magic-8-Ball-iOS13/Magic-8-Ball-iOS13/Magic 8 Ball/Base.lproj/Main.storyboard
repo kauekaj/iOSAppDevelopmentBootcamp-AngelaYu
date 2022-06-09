@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eff-aK-9eI">
+                                <rect key="frame" x="97" y="210" width="220" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SEn-5H-Xid">
+                                <rect key="frame" x="97" y="316" width="220" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="5kL-co-v04"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-Qb-fZc">
+                                <rect key="frame" x="154" y="625" width="106" height="31"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ask"/>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGb-jV-YpE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.5" blue="0.71046208693267521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eff-aK-9eI" secondAttribute="trailing" constant="97" id="4Mh-cf-lTX"/>
+                            <constraint firstItem="SEn-5H-Xid" firstAttribute="top" secondItem="eff-aK-9eI" secondAttribute="bottom" constant="70" id="Wfx-7b-FsX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QuS-Qb-fZc" secondAttribute="trailing" constant="154" id="Yxm-na-FzO"/>
+                            <constraint firstItem="eff-aK-9eI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-220" id="cIa-jw-GEa"/>
+                            <constraint firstItem="eff-aK-9eI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="hsg-6N-LbY"/>
+                            <constraint firstItem="SEn-5H-Xid" firstAttribute="leading" secondItem="eff-aK-9eI" secondAttribute="leading" id="lz3-d6-y5J"/>
+                            <constraint firstItem="QuS-Qb-fZc" firstAttribute="top" secondItem="SEn-5H-Xid" secondAttribute="bottom" constant="59" id="pnR-MS-N16"/>
+                            <constraint firstItem="SEn-5H-Xid" firstAttribute="trailing" secondItem="eff-aK-9eI" secondAttribute="trailing" id="uQe-xA-98F"/>
+                            <constraint firstItem="QuS-Qb-fZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="ykf-iO-9tq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SEn-5H-Xid" id="rMf-Iw-ik0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>
